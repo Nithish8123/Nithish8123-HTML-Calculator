@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Calculator
+        </title>
+        <link rel="stylesheet" href="Calc.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <Body>
+        <div class ="Container container text-center">
+            <h1 class="Calc">Calulator</h1>
+            <input type="text" id="input" placeholder="0">
+            <ul class="line d-flex justify-content-center">
+                <li><button class="btn1 btn-primar" onclick="input.value=''">Clr</button></li>
+                <li><button class="btn1 btn-primar" onclick="input.value=Math.abs(input.value)">Abs</button></li>
+                <li><button class="btn1 btn-primar" onclick="input.value+=Math.random()">Ran</button></li>
+                <li><button class="btn1 sym btn-primar" onclick="input.value=Math.floor(input.value)">Ron</button></li>
+            </ul >
+            <ul class="line d-flex justify-content-center">
+                <li><button class="btn1 btn-primar" onclick="input.value+='7'">7</button></li>
+                <li><button class="btn1 btn-primar" onclick="input.value+='8'">8</button></li>
+                <li><button class="btn1 btn-primar" onclick="input.value+='9'">9</button></li>
+                <li><button class="btn1 sym btn-primar" onclick="input.value+='+'">+</button></li>
+            </ul >
+            <ul class="line d-flex justify-content-center">
+                <li><button class="btn1 btn-primar" onclick="input.value+='4'">4</button></li>
+                <li><button class="btn1 btn-primar" onclick="input.value+='5'">5</button></li>
+                <li><button class="btn1 btn-primar" onclick="input.value+='6'">6</button></li>
+                <li><button class="btn1 sym btn-primar" onclick="input.value+='-'">-</button></li>
+            </ul>
+            <ul class="line d-flex justify-content-center">
+                <li><button class="btn1 btn-primar" onclick="input.value+='1'">1</button></li>
+                <li><button class="btn1 btn-primar" onclick="input.value+='2'">2</button></li>
+                <li><button class="btn1 btn-primar" onclick="input.value+='3'">3</button></li>
+                <li><button class="btn1 sym btn-primar" onclick="input.value+='*'">*</button></li>
+            </ul>
+            <ul class="line d-flex justify-content-center">
+                <li><button class="btn1 btn-primar" onclick="input.value+='/'">/</button></li>
+                <li><button class="btn1 btn-primar" onclick="input.value+='0'" >0</button></li>
+                <li><button class="btn1 btn-primar" onclick="input.value+='.'">.</button></li>
+                <li><button class="btn1 sym btn-primar" onclick="input.value =eval(input.value)">=</button></li>
+            </ul>
+        </div>
+    </Body>
+</html>
